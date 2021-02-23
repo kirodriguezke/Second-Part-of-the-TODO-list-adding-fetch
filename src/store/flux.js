@@ -6,7 +6,7 @@ export default function({ getStore, getActions, setStore }) {
         actions: {
             getToDoList() {
                 const store = getStore()
-                const endpoint = 'https://assets.breatheco.de/apis/fake/todos/user/rodrike90';
+                const endpoint = 'https://assets.breatheco.de/apis/fake/todos/user/kirodriguezke';
                 const config = {
                     method: "GET"
                 }
@@ -22,7 +22,7 @@ export default function({ getStore, getActions, setStore }) {
             },
             setToDoList(data) {
                 const store = getStore();
-                const endpoint = "https://assets.breatheco.de/apis/fake/todos/user/rodrike90";
+                const endpoint = "https://assets.breatheco.de/apis/fake/todos/user/kirodriguezke";
                 const config = {
 					method: "PUT",
 					body: JSON.stringify(data),
@@ -39,7 +39,7 @@ export default function({ getStore, getActions, setStore }) {
                 newList.push({"label": item, "done": false, "id": (Math.floor(Math.random() * 100000) + 1)})
                 setStore({todos: newList})  
             },
-            deleteToDoList(value) {
+            deleteLabel(value) {
                 const store = getStore()
                 const newList = store.todos.filter((item, index) => {
                     return (value != item.id)

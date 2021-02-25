@@ -7,8 +7,9 @@ import {
 
 import injectContext from "./store"
 
-import {Home} from "./pages/home.js"
 
+
+import Home from "./pages/home.js"
 
 export default injectContext(function(props) {
     return (

@@ -6,7 +6,7 @@ export default function({ getStore, getActions, setStore }) {
         actions: {
             getToDoList() {
                 const store = getStore()
-                const endpoint = 'https://assets.breatheco.de/apis/fake/todos/user/kirodriguezke';
+                const endpoint = 'https://assets.breatheco.de/apis/fake/todos/user/kikerodriguez';
                 const config = {
                     method: "GET"
                 }
@@ -22,7 +22,7 @@ export default function({ getStore, getActions, setStore }) {
             },
             setToDoList(data) {
                 const store = getStore();
-                const endpoint = "https://assets.breatheco.de/apis/fake/todos/user/kirodriguezke";
+                const endpoint = "https://assets.breatheco.de/apis/fake/todos/user/kikerodriguez";
                 const config = {
 					method: "PUT",
 					body: JSON.stringify(data),
